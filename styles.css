@@ -1,0 +1,249 @@
+* {
+  font-family: "Inter";
+}
+
+body {
+  margin: 0;
+}
+
+.topofpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  font-family: "DM Sans";
+  width: 1430px;
+  height: 45px;
+}
+
+.author-name {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  width: 483px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+}
+.navigation--contact {
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 604px;
+  width: 1359px;
+  margin-bottom: 165px;
+}
+
+.left--hello {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.left--junior {
+  font-size: 64px;
+}
+
+#softwareEngineerImage {
+  height: 604px;
+  width: 604px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeBox {
+  width: 1458px;
+  height: 672.02px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 118px;
+}
+.aboutMeBox--text {
+  width: 856px;
+  height: 459px;
+}
+.aboutMeBox--image {
+  margin-right: 113px;
+}
+
+#tempimage {
+  height: 672.02px;
+  width: 488.74px;
+}
+
+#about-me-title {
+  font-size: 48px;
+  margin-bottom: 49px;
+  font-weight: 600;
+}
+
+.about-me-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32.4px;
+}
+
+.technical {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.technical--box {
+  display: flex;
+  flex-direction: column;
+  width: 947px;
+  height: 313px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.technicaltitle {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 41px;
+}
+
+.technicalinformation {
+  width: 484px;
+  height: 52px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.technicalicons {
+  width: 947px;
+  height: 112px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills-icon {
+  width: 67px;
+  height: 67px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.icon-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects-title {
+  display: block;
+  color: #272643;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.projects-box {
+  width: 1580px;
+  height: 1380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 159px;
+}
+
+.single-project {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 620px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.project-type {
+  font-size: 16px;
+}
+
+.project-name {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.project-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.project-links button {
+  width: 113px;
+  height: 45px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-right: 23px;
+}
+
+.project-left {
+  margin-right: 350px;
+}
+
+.project-right {
+  margin: 0px;
+}
+
+.footer {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 90px;
+  width: 1728px;
+  height: 155px;
+}
+
+.social-media {
+  width: 45px;
+  height: 45px;
+  margin-right: 11px;
+}
+
+@media only screen and (max-width: 428px) {
+  * {
+    background-color: black;
+  }
+}
