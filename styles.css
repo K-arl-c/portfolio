@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-.topofpage {
+.topOfPage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,18 +14,17 @@ body {
 }
 
 @media only screen and (max-width: 428px) {
-  .topofpage {
+  .topOfPage {
     display: none;
   }
 }
 .heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 100px;
   font-family: "DM Sans";
-  width: 1430px;
-  height: 45px;
+  width: 80%;
 }
 
 .author-name {
@@ -46,21 +45,32 @@ body {
   border-radius: 7px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 604px;
-  width: 1359px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
   margin-bottom: 165px;
+}
+.intro--left {
+  width: 40%;
+}
+.intro--right {
+  width: 40%;
 }
 
 @media only screen and (max-width: 428px) {
   .intro {
     display: block;
-    width: 326px;
-    height: 516px;
     margin-top: 82px;
+    margin-bottom: 50px;
   }
 }
 .left--hello {
@@ -86,11 +96,10 @@ body {
   }
 }
 #softwareEngineerImage {
-  height: 604px;
-  width: 604px;
+  width: 80%;
 }
 
-.center {
+.introSection {
   display: flex;
   justify-content: center;
 }
@@ -101,8 +110,7 @@ body {
 }
 
 .aboutMeBox {
-  width: 1458px;
-  height: 672.02px;
+  width: 80%;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -110,27 +118,25 @@ body {
   margin-bottom: 118px;
 }
 .aboutMeBox--text {
-  width: 856px;
-  height: 459px;
+  width: 100%;
 }
 .aboutMeBox--image {
-  margin-right: 113px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #tempimage {
-  height: 672.02px;
-  width: 488.74px;
+  width: 75%;
 }
 
 @media only screen and (max-width: 428px) {
   .aboutMeBox {
-    width: 368px;
-    height: 1281px;
+    margin-bottom: 50px;
     flex-direction: column;
   }
   .aboutMeBox--text {
-    width: 368px;
-    height: 736px;
     display: flex;
     flex-direction: column;
   }
@@ -138,8 +144,7 @@ body {
     margin-right: 0;
   }
   #tempimage {
-    width: 300px;
-    height: 412px;
+    display: none;
   }
 }
 #about-me-title {
@@ -153,7 +158,7 @@ body {
     text-align: center;
   }
 }
-.about-me-text {
+.aboutMeText {
   font-size: 18px;
   font-weight: 400;
   line-height: 32.4px;
@@ -167,8 +172,7 @@ body {
 .technical--box {
   display: flex;
   flex-direction: column;
-  width: 947px;
-  height: 313px;
+  width: 45%;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -178,58 +182,65 @@ body {
     margin-bottom: 95px;
   }
   .technical--box {
-    width: 366px;
-    height: 710px;
+    width: 95%;
   }
 }
-.technicaltitle {
+.technicalTitle {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 41px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 428px) {
-  .technicaltitle {
-    width: 326px;
-    height: 150px;
+  .technicalTitle {
     font-size: 32px;
     margin-top: 100px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
-.technicalinformation {
-  width: 484px;
-  height: 52px;
+.technicalInformation {
+  width: 100%;
   font-size: 16px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 428px) {
-  .technicalinformation {
-    width: 332px;
-    height: 204px;
+  .technicalInformation {
     line-height: 25.6px;
     margin-bottom: 0;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .techbreak {
     display: none;
   }
 }
-.technicalicons {
+.technicalIcons {
   width: 90%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.technicalIcons--holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media only screen and (max-width: 428px) {
-  .technicalicons {
-    width: 90%;
-    justify-content: center;
+  .technicalIcons {
+    width: 45%;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column;
+  }
+  .technicalIcons--holder {
+    width: 67px;
+    height: 112px;
   }
 }
 .skills-icon {
@@ -239,19 +250,6 @@ body {
   margin-bottom: 20px;
 }
 
-.icon-holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media only screen and (max-width: 428px) {
-  .icon-holder {
-    width: 67px;
-    height: 112px;
-  }
-}
 .projects {
   display: flex;
   align-items: center;
@@ -259,7 +257,7 @@ body {
   flex-wrap: wrap;
 }
 
-.projects-title {
+.projectsTitle {
   display: block;
   color: #272643;
   font-size: 48px;
@@ -268,59 +266,62 @@ body {
   margin-bottom: 50px;
 }
 
-.projects-box {
-  width: 1580px;
-  height: 1380px;
+.projectsBox {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 159px;
 }
 
 @media only screen and (max-width: 428px) {
-  .projects-box {
-    width: 373px;
-    height: 1937px;
+  .projectsBox {
+    width: 100%;
     margin-bottom: 80px;
   }
 }
-.single-project {
+.singleProject {
   display: flex;
   flex-direction: column;
-  width: 440px;
-  height: 620px;
+  width: 45%;
   flex-wrap: wrap;
   margin-bottom: 60px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#exampleProject {
+  width: 100%;
 }
 
 @media only screen and (max-width: 428px) {
-  .single-project {
-    width: 373px;
-    height: 600px;
+  .singleProject {
+    width: 100%;
   }
-  .exampleproject {
-    width: 373px;
-    height: 304px;
+  .exampleProject {
+    width: 100%;
   }
   #projectFour {
     display: none;
   }
 }
-.project-type {
+.projectInfo--type {
   font-size: 16px;
+  margin-bottom: 5px;
 }
-
-.project-name {
+.projectInfo--name {
   font-size: 38px;
   font-weight: 600;
+  margin-bottom: 30px;
 }
-
-.project-description {
+.projectInfo--description {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
-.project-links button {
+.projectLinks button {
   width: 113px;
   height: 45px;
   background-color: white;
@@ -329,19 +330,11 @@ body {
   margin-right: 23px;
 }
 
-.project-left {
-  margin-right: 350px;
-}
-
 @media only screen and (max-width: 428px) {
   .project-left {
     margin-right: 0;
   }
 }
-.project-right {
-  margin: 0px;
-}
-
 .footer {
   background-color: black;
 }
@@ -354,7 +347,7 @@ footer {
   align-items: center;
   margin-left: 120px;
   margin-right: 90px;
-  width: 1728px;
+  width: 90%;
   height: 155px;
 }
 

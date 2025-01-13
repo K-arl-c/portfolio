@@ -1,3 +1,4 @@
+// ALL
 *{
     font-family: "Inter";
 }
@@ -6,7 +7,8 @@ body{
     margin:0
 }
 
-.topofpage{
+// NAVIGATION
+.topOfPage{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +16,7 @@ body{
 }
 
 @media only screen and (max-width: 428px) {
-        .topofpage {
+        .topOfPage {
             display: none;
         }
     }
@@ -22,11 +24,10 @@ body{
 .heading{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 100px;
     font-family: "DM Sans";
-    width: 1430px;
-    height: 45px;
+    width: 80%;
 }
 
 .author-name{
@@ -49,22 +50,35 @@ body{
     }
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+// INTRODUCTION
+
+
 .intro{
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 2px solid black;
-    height: 604px;
-    width: 1359px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
     margin-bottom: 165px;
+    &--left{
+        width: 40%;
+    }
+    &--right{
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 428px){
     .intro{
         display: block;
-        width: 326px;
-        height: 516px;
         margin-top: 82px;
+        margin-bottom: 50px;
     }
 }
 
@@ -97,16 +111,16 @@ body{
 }
 
 #softwareEngineerImage{
-    height: 604px;
-    width: 604px;
+    width: 80%;
 }
 
 
-// COME BACK AND FIX THIS NAMING
-.center{
+.introSection{
     display: flex;
     justify-content: center;
 }
+
+// ABOUT ME
 
 .aboutMe{
     display: flex;
@@ -114,36 +128,36 @@ body{
 }
 
 .aboutMeBox{
-    width: 1458px;
-    height: 672.02px;
-    // border: 2px black solid;
+    width: 80%;
     display: flex;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 118px;
     &--text{
-        width: 856px;
-        height: 459px;
+        width: 100%;
     }
     &--image{
-        margin-right:113px;
+        // margin-right:113px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 #tempimage {
-    height: 672.02px;
-    width: 488.74px;
+    // height: 672.02px;
+    width: 75%;
 }
 
 @media only screen and (max-width: 428px) {
     .aboutMeBox{
-        width: 368px;
-        height: 1281px;
+            margin-bottom: 50px;
         flex-direction: column;
         &--text{
-            width: 368px;
-            height: 736px;
+            // width: 368px;
+            // height: 736px;
             display: flex;
             flex-direction: column;
         }
@@ -152,8 +166,7 @@ body{
         }
     }
     #tempimage{
-        width: 300px;
-        height: 412px;
+        display: none;
        }
     }
 
@@ -171,11 +184,13 @@ body{
     }
 }
 
-.about-me-text{
+.aboutMeText{
     font-size: 18px;
     font-weight: 400;
     line-height: 32.4px;
 }
+
+// TECHNICAL
 
 .technical{
     display: flex;
@@ -184,8 +199,8 @@ body{
     &--box{
         display: flex;
         flex-direction: column;
-        width: 947px;
-        height: 313px;
+        width: 45%;
+        // height: 313px;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -195,45 +210,48 @@ body{
     .technical{
         margin-bottom: 95px ;
         &--box{
-            width: 366px;
-            height: 710px;
+            width: 95%;
+            // height: 710px;
         }
     }
 }
 
-.technicaltitle{
+.technicalTitle{
     // width: 359px;
     // height: 58px;
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 41px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 428px) {
-    .technicaltitle{
-        width: 326px;
-        height: 150px;
+    .technicalTitle{
+        // width: 326px;
+        // height: 150px;
         font-size: 32px;
         margin-top: 100px;
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 }
 
-.technicalinformation{
-    width: 484px;
-    height: 52px;
+.technicalInformation{
+    width: 100%;
+    // height: 52px;
     font-size: 16px;
     text-align: center;
     margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 428px) {
-    .technicalinformation{
-        width: 332px;
-        height: 204px;
+    .technicalInformation{
+        // width: 332px;
+        // height: 204px;
         line-height: 25.6px;
         margin-bottom: 0;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .techbreak{
         display: none;
@@ -241,21 +259,32 @@ body{
 }
 
 
-.technicalicons{
+.technicalIcons{
     width: 90%;
     // height: 112px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    &--holder{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+    }
 }
 
 @media only screen and (max-width: 428px) {
-    .technicalicons{
-        width: 90%;
+    .technicalIcons{
+        width: 45%;
         // height: 533px;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        flex-direction: column;
+        // flex-direction: column;
+        &--holder{
+                width: 67px;
+                height: 112px;
+        }
     }
 }
 
@@ -266,20 +295,8 @@ body{
     margin-bottom: 20px;
 }
 
-.icon-holder{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
-@media only screen and (max-width: 428px) {
-    .icon-holder{
-        // margin-right: 48px;
-        width: 67px;
-        height: 112px;
-    }
-}
+// PROJECTS
 
 .projects{
     display: flex;
@@ -288,7 +305,7 @@ body{
     flex-wrap: wrap;
 }
 
-.projects-title {
+.projectsTitle {
     display: block;
     color: #272643;
     font-size: 48px;
@@ -297,65 +314,77 @@ body{
     margin-bottom: 50px;
 }
 
-.projects-box{
-    width: 1580px;
-    height: 1380px;
+.projectsBox{
+    width: 50%;
+    // height: 1380px;
     // border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 159px;
+    ;
 }
 
 @media only screen and (max-width: 428px) {
-    .projects-box{
-        width: 373px;
-        height: 1937px;
+    .projectsBox{
+        width: 100%;
+        // height: 1937px;
         margin-bottom: 80px;
     }
 }
 
-.single-project{
+.singleProject{
     display: flex;
     flex-direction: column;
-    width: 440px;
-    height: 620px;
+    width: 45%;
+    // height: 620px;
     flex-wrap: wrap;
     margin-bottom: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.projectPicture{
+    
+}
+
+#exampleProject{
+    width: 100%;
 }
 
 @media only screen and (max-width: 428px) {
-    .single-project{
-        width: 373px;
-        height: 600px;
+    .singleProject{
+        width: 100%;
+        // height: 600px;
     }
-    .exampleproject{
-        width: 373px;
-        height: 304px;
+    .exampleProject{
+        width: 100%;
+        // height: 304px;
     }
     #projectFour{
         display: none;
     }
 }
 
-
-
-
-.project-type{
-    font-size: 16px;
+.projectInfo{
+    &--type{
+            font-size: 16px;
+            margin-bottom: 5px;
+    }
+    &--name{
+            font-size: 38px;
+            font-weight: 600;
+            margin-bottom: 30px;
+    }
+    &--description{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+    }
 }
 
-.project-name{
-    font-size: 38px;
-    font-weight: 600;
-}
-
-.project-description{
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.project-links button{
+.projectLinks button{
     width: 113px;
     height: 45px;
     background-color: white;
@@ -367,7 +396,7 @@ body{
 
 
 .project-left{
-    margin-right: 350px;
+    // margin-right: 350px;
 }
 
 @media only screen and (max-width: 428px) {
@@ -377,8 +406,10 @@ body{
 }
 
 .project-right{
-    margin: 0px;
+    // margin: 0px;
 }
+
+// FOOTER
 
 .footer{
     background-color: black;
@@ -393,7 +424,7 @@ footer{
     align-items: center;
     margin-left: 120px;
     margin-right: 90px;
-    width: 1728px;
+    width: 90%;
     height: 155px;
 }
 
