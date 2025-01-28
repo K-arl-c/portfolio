@@ -349,8 +349,9 @@ a{
     
 }
 
-#exampleProject{
-    width: 100%;
+.exampleProject{
+    width: 440px;
+    height: auto;
 }
 
 @media only screen and (max-width: 428px) {
@@ -412,12 +413,12 @@ a{
 // FOOTER
 
 .footer{
-    background-color: black;
+    background-color: #0047AB;
 
 }
 
 footer{
-    background-color: black;
+    background-color: #0047AB;
     color: white;
     display: flex;
     justify-content: space-between;
