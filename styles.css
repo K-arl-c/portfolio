@@ -337,11 +337,11 @@ a {
   }
 }
 .footer {
-  background-color: #0047AB;
+  background-color: #000000;
 }
 
 footer {
-  background-color: #0047AB;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: space-between;
