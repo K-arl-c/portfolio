@@ -267,11 +267,11 @@ a {
 }
 
 .projectsBox {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   margin-bottom: 159px;
 }
 
@@ -284,16 +284,19 @@ a {
 .singleProject {
   display: flex;
   flex-direction: column;
-  width: 45%;
   flex-wrap: wrap;
   margin-bottom: 60px;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 300px;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .exampleProject {
-  width: 440px;
-  height: auto;
+  width: auto;
+  height: 350px;
+  border: black 2px solid;
 }
 
 @media only screen and (max-width: 428px) {
@@ -306,6 +309,10 @@ a {
   #projectFour {
     display: none;
   }
+}
+.projectInfo {
+  max-width: 500px;
+  text-align: center;
 }
 .projectInfo--type {
   font-size: 16px;
@@ -331,11 +338,6 @@ a {
   margin-right: 23px;
 }
 
-@media only screen and (max-width: 428px) {
-  .project-left {
-    margin-right: 0;
-  }
-}
 .footer {
   background-color: #000000;
 }
@@ -372,4 +374,12 @@ footer {
   .email {
     margin-top: 32px;
   }
+}
+.hidden {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 10px;
 }
